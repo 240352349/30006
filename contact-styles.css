@@ -1,0 +1,57 @@
+body {
+    background-image: url('member.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 300px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6); 
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contact-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.contact-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .contact-content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .contact-content h1 {
+        font-size: 28px;
+    }
+
+    .contact-content p {
+        font-size: 16px;
+    }
+}

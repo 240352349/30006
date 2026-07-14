@@ -1,0 +1,222 @@
+body {
+    background-image: url('TY.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+main {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.album-details-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.back-link {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.back-link:hover {
+    color: #ddd;
+}
+
+#album-details-content {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.album-details-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#album-details-content img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#album-details-content img:hover {
+    transform: scale(1.05);
+}
+
+#album-details-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#album-details-content p {
+    font-size: 26px;
+    color: #fff;
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#album-details-content .music-links {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.music-link img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.music-link:hover img {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+#album-details-content .tracklist {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#album-details-content .tracklist h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#album-details-content .tracklist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#album-details-content .tracklist li {
+    font-size: 25px;
+    color: #fff;
+    opacity: 0.9;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#album-details-content .copyright {
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    #album-details-content {
+        max-width: 500px;
+    }
+    .album-details-card {
+        padding: 25px;
+    }
+    #album-details-content img {
+        border-radius: 40px;
+    }
+    #album-details-content h1 {
+        font-size: 28px;
+    }
+    #album-details-content p {
+        font-size: 20px;
+    }
+    #album-details-content .music-links {
+        gap: 12px;
+    }
+    .music-link img {
+        width: 80px;
+        height: 80px;
+    }
+    #album-details-content .tracklist h2 {
+        font-size: 20px;
+    }
+    #album-details-content .tracklist li {
+        font-size: 20px;
+    }
+    .back-link {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #album-details-content {
+        max-width: 350px;
+    }
+    .album-details-card {
+        padding: 20px;
+    }
+    #album-details-content img {
+        border-radius: 40px;
+    }
+    #album-details-content h1 {
+        font-size: 24px;
+    }
+    #album-details-content p {
+        font-size: 20px;
+    }
+    #album-details-content .music-links {
+        gap: 10px;
+    }
+    .music-link img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+    #album-details-content .tracklist h2 {
+        font-size: 18px;
+    }
+    #album-details-content .tracklist li {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .back-link {
+        font-size: 20px;
+    }
+}
