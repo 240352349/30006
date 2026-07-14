@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">關於太妍</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">太妍粉絲專頁</div>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li class="close-menu"><a href="#">✕</a></li>
+                <li><a href="index.html" class="nav-item" data-key="home">首頁</a></li>
+                <li><a href="about.html" class="nav-item" data-key="about">關於太妍</a></li>
+                <li><a href="music.html" class="nav-item" data-key="music">音樂作品</a></li>
+                <li><a href="contact.html" class="nav-item" data-key="contact">聯繫我們</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="auth.html" class="icon user-icon">👤</a>
+                <div class="language-selector">
+                    <span class="icon globe-icon">🌎</span>
+                    <div class="language-dropdown">
+                        <a href="#" class="lang-option" data-lang="zh">🇭🇰 繁體中文</a>
+                        <a href="#" class="lang-option" data-lang="en">🇬🇧 英文</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Left-side dot navigation with year labels -->
+        <div class="timeline-nav">
+            <div class="nav-dot" data-year="profile">
+                <a href="#profile"><span class="dot"></span>
+                <span class="year-label" data-key="profile">簡介</span></a>
+            </div>
+            <div class="nav-dot" data-year="2007">
+                <a href="#timeline-2007"><span class="dot"></span>
+                <span class="year-label">2007</span></a>
+            </div>
+            <div class="nav-dot" data-year="2015">
+                <a href="#timeline-2015"><span class="dot"></span>
+                <span class="year-label">2015</span></a>
+            </div>
+            <div class="nav-dot" data-year="2016-rain">
+                <a href="#timeline-2016-rain"><span class="dot"></span>
+                <span class="year-label">2016 (Rain)</span></a>
+            </div>
+            <div class="nav-dot" data-year="2016-why">
+                <a href="#timeline-2016-why"><span class="dot"></span>
+                <span class="year-label">2016 (Why)</span></a>
+            </div>
+            <div class="nav-dot" data-year="2017">
+                <a href="#timeline-2017"><span class="dot"></span>
+                <span class="year-label">2017</span></a>
+            </div>
+            <div class="nav-dot" data-year="2022">
+                <a href="#timeline-2022"><span class="dot"></span>
+                <span class="year-label">2022</span></a>
+            </div>
+            <div class="nav-dot" data-year="2024">
+                <a href="#timeline-2024"><span class="dot"></span>
+                <span class="year-label">2024</span></a>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <!-- Profile Section -->
+            <section class="profile-section" data-year="profile" id="profile">
+                <h1 class="content-item" data-key="about">關於太妍</h1>
+                <div class="profile-container">
+                    <img src="photo/hi.gif" alt="Taeyeon Profile" class="profile-image">
+                    <div class="profile-info">
+                        <p><strong data-key="name-label">姓名：</strong> <span data-key="name">金太耎 (Kim Tae-yeon)</span></p>
+                        <p><strong data-key="artlistName-label">藝名：</strong> <span data-key="artlistName">太妍、TAEYEON</span></p>
+                        <p><strong data-key="nationality-label">國籍：</strong> <span data-key="nationality">大韓民國</span></p>
+                        <p><strong data-key="birthday-label">生日：</strong> <span data-key="birthday">1989年3月9日</span></p>
+                        <p><strong data-key="zodiac-label">星座：</strong> <span data-key="zodiac">雙魚座</span></p>
+                        <p><strong data-key="occupation-label">職業：</strong> <span data-key="occupation">明星、歌手、模特、主持人、YouTuber、舞者</span></p>
+                        <p><strong data-key="debut-label">出道：</strong> <span data-key="debut">團體：2007年8月5日(少女時代);個人：2015年10月7日</span></p>
+                        <p><strong data-key="works-label">代表作：</strong> <span data-key="works">《To.X》、《INVU》、《Fine》</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Signature Container -->
+            <div class="signature-container">
+                <img src="photo/Taeyeon_signature.png" alt="Taeyeon Signature" class="signature-image">
+            </div>
+
+            <!-- Timeline Section -->
+            <section class="timeline-section">
+                <h2 data-key="milestones">職業生涯里程碑</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-year="2007" id="timeline-2007">
+                        <div class="timeline-year">2007</div>
+                        <div class="timeline-content">
+                            <h3 data-key="debut-snsd">少女時代出道</h3>
+                            <p data-key="debut-snsd-desc">太妍作為少女時代的隊長正式出道，首張單曲《Into the New World》發布，奠定團體基礎。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2015" id="timeline-2015">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h3 data-key="solo-debut">個人出道</h3>
+                            <p data-key="solo-debut-desc">發布首張個人迷你專輯《I》，主打歌《I》在Gaon榜表現優異，標誌獨立藝人轉型成功。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2016-rain" id="timeline-2016-rain">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-content">
+                            <h3 data-key="single-rain">單曲《Rain》發布</h3>
+                            <p data-key="single-rain-desc">作為SM Station計劃的一部分，獲得Gaon數字榜冠軍，展現音樂多樣性。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2016-why" id="timeline-2016-why">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-content">
+                            <h3 data-key="album-why">迷你專輯《Why》發布</h3>
+                            <p data-key="album-why-desc">主打歌《Why》廣受好評，專輯在Gaon榜奪冠。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2017" id="timeline-2017">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-content">
+                            <h3 data-key="album-my-voice">正規專輯《My Voice》發布</h3>
+                            <p data-key="album-my-voice-desc">包含《11:11》、《Fine》、《Make Me Love You》，數字榜表現優異。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2022" id="timeline-2022">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-content">
+                            <h3 data-key="album-invu">發布EP《INVU》</h3>
+                            <p data-key="album-invu-desc">以主打歌《INVU》獲得成功，進一步鞏固其獨立藝人地位。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2024" id="timeline-2024">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-content">
+                            <h3 data-key="album-letter-to-myself">發布EP《Letter to Myself》</h3>
+                            <p data-key="album-letter-to-myself-desc">包含主打歌《Letter to Myself》，展現自我反思和成長的主題。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Audio Player -->
+    <div class="audio-player" id="audio-player">
+        <div class="audio-player-header" id="audio-player-header">
+            <span class="audio-title">背景音樂</span>
+            <button class="toggle-player" id="toggle-player">收起</button>
+        </div>
+        <div class="audio-player-body" id="audio-player-body">
+            <audio id="background-audio" loop>
+                <source src="i.mp3" type="audio/mpeg">
+                您的瀏覽器不支援音頻播放。
+            </audio>
+            <button class="play-pause-btn" id="play-pause-btn">暫停</button>
+        </div>
+        <div class="audio-player-collapsed" id="audio-player-collapsed">
+            <button class="expand-player" id="expand-player">展開</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="about-script.js"></script>
+    <script src="audio-player.js"></script>
+</body>
+</html>

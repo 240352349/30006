@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">太妍音樂</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="music-styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">太妍粉絲專頁</div>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li class="close-menu"><a href="#">✕</a></li>
+                <li><a href="index.html" class="nav-item" data-key="home">首頁</a></li>
+                <li><a href="about.html" class="nav-item" data-key="about">關於太妍</a></li>
+                <li><a href="music.html" class="nav-item" data-key="music">音樂作品</a></li>
+                <li><a href="contact.html" class="nav-item" data-key="contact">聯繫我們</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="auth.html" class="icon user-icon">👤</a>
+                <div class="language-selector">
+                    <span class="icon globe-icon">🌎</span>
+                    <div class="language-dropdown">
+                        <a href="#" class="lang-option" data-lang="zh">🇭🇰 繁體中文</a>
+                        <a href="#" class="lang-option" data-lang="en">🇬🇧 英文</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="music-content">
+            <section class="music-section">
+                <h1 data-key="music">音樂作品</h1>
+                <div class="album-grid">
+                    <!-- Row 1 -->
+                    <a href="album-details.html?album=i-2015" class="album-item">
+                        <img src="photo/I.jpg" alt="I (2015) Album Cover">
+                        <p>I (2015)</p>
+                    </a>
+                    <a href="album-details.html?album=rain-2016" class="album-item">
+                        <img src="photo/Rain.jpg" alt="Rain (2016) Single Cover">
+                        <p>Rain (2016)</p>
+                    </a>
+                    <a href="album-details.html?album=why-2016" class="album-item">
+                        <img src="photo/Why.jpg" alt="Why (2016) Album Cover">
+                        <p>Why (2016)</p>
+                    </a>
+                    <a href="album-details.html?album=my-voice-2017" class="album-item">
+                        <img src="photo/MyVoice.jpg" alt="My Voice (2017) Album Cover">
+                        <p>My Voice (2017)</p>
+                    </a>
+                    <a href="album-details.html?album=this-christmas-2017" class="album-item">
+                        <img src="photo/ThisChristmas.jpg" alt="This Christmas: Winter is Coming (2017) Album Cover">
+                        <p>This Christmas (2017)</p>
+                    </a>
+                    <a href="album-details.html?album=something-new-2018" class="album-item">
+                        <img src="photo/SN.jpg" alt="Something New (2018) Album Cover">
+                        <p>Something New (2018)</p>
+                    </a>
+                    <!-- Row 2 -->
+                    <a href="album-details.html?album=four-seasons-2019" class="album-item">
+                        <img src="photo/FS.jpg" alt="Four Seasons (2019) Single Cover">
+                        <p>Four Seasons (2019)</p>
+                    </a>
+                    <a href="album-details.html?album=purpose-2019" class="album-item">
+                        <img src="photo/P.jpg" alt="Purpose (2019) Album Cover">
+                        <p>Purpose (2019)</p>
+                    </a>
+                    <a href="album-details.html?album=what-do-i-call-you-2020" class="album-item">
+                        <img src="photo/WDICY.jpg" alt="What Do I Call You (2020) Album Cover">
+                        <p>What Do I Call You (2020)</p>
+                    </a>
+                    <a href="album-details.html?album=invu-2022" class="album-item">
+                        <img src="photo/INVU.jpg" alt="INVU (2022) Album Cover">
+                        <p>INVU (2022)</p>
+                    </a>
+                    <a href="album-details.html?album=to-x-2023" class="album-item">
+                        <img src="photo/TX.jpg" alt="To. X (2023) Album Cover">
+                        <p>To. X (2023)</p>
+                    </a>
+                    <a href="album-details.html?album=letter-to-myself-2024" class="album-item">
+                        <img src="photo/letter.png" alt="Letter to Myself (2024) Album Cover">
+                        <p>Letter to Myself (2024)</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Audio Player -->
+    <div class="audio-player" id="audio-player">
+        <div class="audio-player-header" id="audio-player-header">
+            <span class="audio-title">背景音樂</span>
+            <button class="toggle-player" id="toggle-player">收起</button>
+        </div>
+        <div class="audio-player-body" id="audio-player-body">
+            <audio id="background-audio" loop>
+                <source src="i.mp3" type="audio/mpeg">
+                您的瀏覽器不支援音頻播放。
+            </audio>
+            <button class="play-pause-btn" id="play-pause-btn">暫停</button>
+        </div>
+        <div class="audio-player-collapsed" id="audio-player-collapsed">
+            <button class="expand-player" id="expand-player">展開</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="audio-player.js"></script>
+</body>
+</html>

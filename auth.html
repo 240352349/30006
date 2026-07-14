@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">太妍會員登入</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">太妍粉絲專頁</div>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul class="nav-links">
+                <li class="close-menu"><a href="#">✕</a></li>
+                <li><a href="index.html" class="nav-item" data-key="home">首頁</a></li>
+                <li><a href="about.html" class="nav-item" data-key="about">關於太妍</a></li>
+                <li><a href="music.html" class="nav-item" data-key="music">音樂作品</a></li>
+                <li><a href="contact.html" class="nav-item" data-key="contact">聯繫我們</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="auth.html" class="icon user-icon">👤</a>
+                <div class="language-selector">
+                    <span class="icon globe-icon">🌎</span>
+                    <div class="language-dropdown">
+                        <a href="#" class="lang-option" data-lang="zh">🇭🇰 繁體中文</a>
+                        <a href="#" class="lang-option" data-lang="en">🇬🇧 英文</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Auth Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-wrapper">
+                <!-- Login Form -->
+                <div class="auth-form login-form active fade-in">
+                    <h2 data-key="login-heading">登入太妍會員</h2>
+                    <p data-key="login-description">登入以探索更多太妍的音樂和活動。</p>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email" data-key="email-label">電子郵件</label>
+                            <input type="email" id="login-email" name="email" placeholder="輸入您的電子郵件" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password" data-key="password-label">密碼</label>
+                            <input type="password" id="login-password" name="password" placeholder="輸入您的密碼" required>
+                        </div>
+                        <button type="submit" class="auth-btn" data-key="login-btn">登入</button>
+                        <p class="form-footer">
+                            <span data-key="no-account">還沒有帳號？</span>
+                            <a href="#" class="toggle-link" data-toggle="signup" data-key="signup-link">在此註冊</a>!
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div class="auth-form signup-form fade-in">
+                    <h2 data-key="signup-heading">註冊成為太妍會員</h2>
+                    <p data-key="signup-description">創建新帳號以加入太妍的粉絲社群。</p>
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label for="signup-name" data-key="name-label">姓名</label>
+                            <input type="text" id="signup-name" name="name" placeholder="輸入您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email" data-key="email-label">電子郵件</label>
+                            <input type="email" id="signup-email" name="email" placeholder="輸入您的電子郵件" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password" data-key="password-label">密碼</label>
+                            <input type="password" id="signup-password" name="password" placeholder="創建密碼" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-confirm-password" data-key="confirm-password-label">確認密碼</label>
+                            <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="確認您的密碼" required>
+                        </div>
+                        <button type="submit" class="auth-btn" data-key="signup-btn">註冊</button>
+                        <p class="form-footer">
+                            <span data-key="have-account">已經有帳號？</span>
+                            <a href="#" class="toggle-link" data-toggle="login" data-key="login-link">在此登入</a>!
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player -->
+    <div class="audio-player" id="audio-player">
+        <div class="audio-player-header" id="audio-player-header">
+            <span class="audio-title">背景音樂</span>
+            <button class="toggle-player" id="toggle-player">收起</button>
+        </div>
+        <div class="audio-player-body" id="audio-player-body">
+            <audio id="background-audio" loop>
+                <source src="i.mp3" type="audio/mpeg">
+                您的瀏覽器不支援音頻播放。
+            </audio>
+            <button class="play-pause-btn" id="play-pause-btn">暫停</button>
+        </div>
+        <div class="audio-player-collapsed" id="audio-player-collapsed">
+            <button class="expand-player" id="expand-player">展開</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3 data-key="logo">太妍粉絲專頁</h3>
+                <p data-key="intro">這裡關於太妍的粉絲專頁，歡迎探索她的音樂和活動。</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-key="contact-heading">聯絡我們</h3>
+                <ul>
+                    <li><a href="#" data-key="email-label">電子郵件📧</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Taeyeon Fan Page, All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth-script.js"></script>
+    <script src="audio-player.js"></script>
+</body>
+</html>
